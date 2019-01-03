@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+
+
+		<script src="js/d3.js"></script>
+
+				<link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css" rel="stylesheet" />
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
+
+
+		<title>Big Picture by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+
+	<style>
+
+body  {
+
+	text-align: center;
+
+
+}
+
+
+article {
+	margin: 0 auto;
+	width:600px;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+		}
+
+		.dropcap::first-letter{      /*I chose to add a drop cap because I like the style of the telegraph news articles */
+			float: left;
+			font-size: 80px;
+			line-height: 1;
+			font-weight: bold;
+			margin-right: 15px;
+			font-family: "Georgia", serif;
+			color: black;
+			}
+
+			p { text-align: justify;}
+
+
+	</style>
+
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<h1>Data-driven Analysis </h1>
+				<nav>
+					<ul>
+						<li>by Leslie Leuenberger</li>
+
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<div class="content">
+					<header>
+						<h2>Twitter doesn't forget</h2>
+					</header>
+					<p>Comedian <strong>Kevin Hart's</strong> withdrawl as Oscar host due to the Twitter scandal. </p>
+					<footer>
+						<a href="#one" class="button style2 down">More</a>
+					</footer>
+				</div>
+			</section>
+
+
+
+
+		<!-- One -->
+			<section id="one" class="main style2 right dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Kevin Hart</h2>
+					</header>
+					<p>blablajd lkjasdfhsdf jhjh.</p>
+				</div>
+			</section>
+
+
+
+
+
+		<!-- Work -->
+			<section id="work" class="main style3 primary">
+				<div class="content">
+					<header>
+						<h2>My Work</h2>
+
+<article>
+
+
+						<p  class="dropcap">
+					 Commodo id natoque malesuada sollicitudin elit suscipit. Curae suspendisse mauris posuere accumsan massa
+					 posuere lacus convallis tellus interdum. Amet nullam fringilla nibh nulla convallis ut venenatis purus
+					 sit arcu sociis. Nunc fermentum adipiscing tempor cursus nascetur adipiscing adipiscing. </p>
+
+	<div id="chart"></div>
+
+					 <p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
+					 Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis
+					 arcu, id varius justo euismod in. Curabitur egestas consectetur magna vitae.</p>
+
+
+
+</article>
+
+					</header>
+
+
+
+
+
+
+					<footer id="footer">
+
+						<!-- Icons -->
+							<ul class="icons">
+								<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+								<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+							</ul>
+
+						<!-- Menu -->
+							<ul class="menu">
+								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+
+					</footer>
+
+
+<script>
+
+var chart = c3.generate({
+		 bindto: '#chart',
+				data: {
+				columns: [
+						['16 - 19', 44],
+						['20 - 24', 24],
+						['25 - 34', 18],
+						['35 - 44', 10],
+						['45 - 51', 3],
+
+
+				],
+				type : 'donut',
+				onclick: function (d, i) { console.log("onclick", d, i); },
+				onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+				onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+		},
+		donut: {
+				title: "Age"
+		}
+})
+
+			</script>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+
+
+
+
+
+	</body>
+</html>
