@@ -130,8 +130,6 @@
 						In the light of this controversy, the main question at the base of this analysis is:
 						Are users reaction to Kevin Hart’s withdrawl from hosting positive or negative?
 					</p>
-
-
 			</div>
 		</section>
 
@@ -139,12 +137,17 @@
 		<section id="introduction" class="main style3 primary text_centered">
 			<div class="content">
 				<header>
-					<h2>The Scrape</h2>
+					<h2>The Twitter Scrape</h2>
 				</header>
 				<p>
-					For this research project, a set of 19,292 tweets was gathered from the late morning of December 7th when the news about Kevin Hart stepping down as an Oscar host broke. The set of tweets came from 18,606 single users. Said dataset was scraped with a python code that streamed live-tweets over roughly 1.5 hours.  
+					For this research project, a set of 19,292 tweets was gathered from the late morning of December 7th when the news about Kevin Hart stepping down as an Oscar host broke.
+					The set of tweets came from 18,606 single users. Said dataset was scraped with a python code that streamed live-tweets over roughly 1.5 hours.
 				</p>
-
+				<p>
+					A great number of people discussed the topic on Twitter but didn’t add a hashtag to their tweets.
+					This is why instead of #KevinHart the search term “Kevin Hart” was chosen for the scrape. This way the dataset wasn’t limited
+					and thus conveyed a more realistic picture of the debate.
+				</p>
 
 			</div>
 		</section>
@@ -153,6 +156,15 @@
 
 		<section id="scrape" class="main style3 primary text_centered">
 			<div class="content">
+				<header>
+					<h2>Ratio of Tweets and Retweets</h2>
+				</header>
+				<p>
+					In a first step, the tweet/retweet ratio was looked at. The analysis found that little
+					over a quarter of the tweets from the dataset consisted of original tweets
+					and little under three quarters consisted of retweets. This translates to 5,396 unique tweets and 13,896 retweets. 
+				</p>
+
 
 			</div>
 		</section>
@@ -191,9 +203,7 @@
 			<section id="bot" class="main style3 primary text_centered">
 				<div class="content">
 
-					<div id="top_x_div">
-
-					</div>
+					<div id="top_x_div"></div>
 
 				</div>
 			</section>
@@ -212,7 +222,32 @@
 			<!-- Users -->
 
 			<section id="users" class="main style3 primary text_centered">
+
 				<div class="content">
+
+					<div style="width:50%; display:inline-block;">
+
+					  <p>
+							After two days Hart broke his silence and defended himself in a
+							video on Instagram in which he explains why he doesn’t want to apologise (again). Hart’s message sparked a debate
+							over whether or not he owed the LGBTQ community an apology. Supporters of Hart claimed he was right to put his foot down.
+							Critics, however, demanded the comedian should step down. On the 7th Hart announced his withdrawal from hosting
+							the Academy Awards. The Kevin Hart scandal has been an ongoing debate on social media ever since.
+					  </p>
+
+					</div>
+					<div style="width:50%; display:inline-block;">
+
+						<p>
+							After two days Hart broke his silence and defended himself in a
+							video on Instagram in which he explains why he doesn’t want to apologise (again). Hart’s message sparked a debate
+							over whether or not he owed the LGBTQ community an apology. Supporters of Hart claimed he was right to put his foot down.
+							Critics, however, demanded the comedian should step down. On the 7th Hart announced his withdrawal from hosting
+							the Academy Awards. The Kevin Hart scandal has been an ongoing debate on social media ever since.
+						</p>
+
+					</div>
+
 					<div id="stackedchart">
 
 					</div>
@@ -331,10 +366,6 @@
 
 				chart.draw(data, options);
 
-				setInterval(function() {
-					data.setValue(1);
-					chart.draw(data, options);
-				}, 13000);
 			}
 		</script>
 
